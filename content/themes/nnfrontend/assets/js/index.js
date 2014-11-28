@@ -8,11 +8,11 @@
 
     $(document).ready(function(){
 
-        $(".postcontent_typesome").fitVids();
+        $(".postcontent").fitVids();
 
         function casperFullImg() {
             $("img").each( function() {
-                var contentWidth = $(".postcontent_typesome").outerWidth(); // Width of the content
+                var contentWidth = $(".postcontent").outerWidth(); // Width of the content
                 var imageWidth = $(this)[0].naturalWidth; // Original image resolution
 
                 if (imageWidth >= contentWidth) {

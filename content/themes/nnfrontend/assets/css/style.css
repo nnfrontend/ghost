@@ -137,7 +137,7 @@ img {
     border: 0;
 }	
 
-.postcontent_typesome img {
+.postcontent img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -286,7 +286,7 @@ margin on the iframe, cause it breaks stuff. */
    								2. Utilities
    ========================================================================== */
 
-.hidden_typesome {
+.hidden {
 	text-indent: -99999px;
     visibility: hidden;
     display: none;
@@ -328,7 +328,7 @@ margin on the iframe, cause it breaks stuff. */
 	background-image: linear-gradient(-180deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);	
 	} 
 
-.header_typesome {
+.header {
 	position: relative;
 	margin: 3rem auto;
 	width: 80%;
@@ -338,7 +338,7 @@ margin on the iframe, cause it breaks stuff. */
 
     /* Logo */
 
- .logo_typesome img {
+ .logo img {
 	display: block;
 	height: 90px;
     width: 90px;
@@ -350,11 +350,11 @@ margin on the iframe, cause it breaks stuff. */
 	box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.5);
 	}	
 	
-.blogtitle_typesome {
+.blogtitle {
 	margin: 2rem 0 2rem;
 	}
 
-.blogtitle_typesome a,  #site-head .header_typesome .blogtitle_typesome a {
+.blogtitle a,  #site-head .header .blogtitle a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 4.8rem;
@@ -363,7 +363,7 @@ margin on the iframe, cause it breaks stuff. */
 	text-decoration: none;
 	}
  
-.blogdescription_typesome {
+.blogdescription {
 	font-family: 'Noto Serif', serif;
 	font-size: 1.6rem;
 	color: #eee;
@@ -378,22 +378,22 @@ margin on the iframe, cause it breaks stuff. */
    								4. Articles
    ========================================================================== */
 
-.main_typesome {
+.main {
 	width: 80%;
 	max-width: 780px;
 	margin: 0 auto;
 	}
 	 	
-.article_typesome {
+.article {
 	margin-bottom: 6rem;
 	}
 	
-.postheader_typesome ul {
+.postheader ul {
 	margin: 0;
 	padding: 0;
 	}
 
-.author-thumb_typesome {
+.author-thumb {
     width: 28px;
     height: 28px;
     border-radius: 100%;
@@ -401,13 +401,13 @@ margin on the iframe, cause it breaks stuff. */
     margin-right: 0.5rem;
 }
 	
-.postheader_typesome ul li {
+.postheader ul li {
 	padding: 0;
 	margin: 0;
 	display: inline-block;
 	}
 	
-.date_typesome, .posttags_typesome, .posttags_typesome a, .name-thumb_typesome a {
+.date, .posttags, .posttags a, .name-thumb a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-size: 1.4rem;
@@ -415,12 +415,12 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 	}
 
-.posttags_typesome a:hover, .name-thumb_typesome a:hover  {
+.posttags a:hover, .name-thumb a:hover  {
     text-decoration: underline;
     color: #5BA4E5;
 }
 	
-.posttags_typesome:before, .postheader_typesome ul li:nth-child(3):before {
+.posttags:before, .postheader ul li:nth-child(3):before {
 	content:" • ";
 	font-weight: 700;
     color: #7F7F7F;
@@ -430,26 +430,26 @@ margin on the iframe, cause it breaks stuff. */
 	
 	/* Post title */
 
-.posttitle_typesome {
+.posttitle {
 	padding: 1rem 0 1.2rem;
 	margin: 0;
 	line-height: 1.2em;
 	}
 
-.posttitle_typesome a {
+.posttitle a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	color: #383838;
 	text-decoration: none;
 	}
 
-.posttitle_typesome a:hover {
+.posttitle a:hover {
 	color: #5BA4E5;
 	}
 
 	/* Post content */
 	
-.postcontent_typesome {
+.postcontent {
 	font-family: 'Noto Serif', serif;
 	font-size: 2rem;
 	color: #383838;
@@ -457,7 +457,7 @@ margin on the iframe, cause it breaks stuff. */
 	padding-bottom: 2rem;
 	}
 	
-.postcontent_typesome p:first-child {
+.postcontent p:first-child {
 	margin: 0;
 	padding: 0;
 	}	
@@ -467,7 +467,7 @@ margin on the iframe, cause it breaks stuff. */
    								5. Third Party Elements
    ========================================================================== */
 
-.excerptfooter_typesome {
+.excerptfooter {
 	width: 100%;
 	border-bottom: 1px solid #ddd;
 	position: relative;
@@ -477,23 +477,23 @@ margin on the iframe, cause it breaks stuff. */
 	color: #383838; 
 	}
 
-.read_typesome {
+.read {
 	padding-top: 1rem;
 	padding-bottom: 1.4rem;
 	}
 	
-.read_typesome span:before {
+.read span:before {
 	content:" • ";
 	}
 
-.share_typesome {
+.share {
 	position: absolute;
 	right: 0;
 	top: 1rem;
 	overflow: hidden;	
 	}
 	
-.share_typesome h4 {
+.share h4 {
 	font-size: 1.6rem;
 	color: #7F7F7F;
 	float: left;
@@ -501,7 +501,7 @@ margin on the iframe, cause it breaks stuff. */
 	margin-top: 0;	
 	}
 	
-.share_typesome a {
+.share a {
 	font-size: 2rem;
 	color: #ddd;
 	text-decoration: none;
@@ -509,7 +509,7 @@ margin on the iframe, cause it breaks stuff. */
 	padding-top: 0.8rem;
 	}
 
-.share_typesome a:hover {
+.share a:hover {
 	color: #383838;
 	}
 
@@ -565,16 +565,16 @@ margin on the iframe, cause it breaks stuff. */
    					7. Footer - The bottom of every page
    ========================================================================== */
 
-.footer_typesome {
+.footer {
 	background: #2B2B2B;
 	width: 100%;
 	}
 	
-.footer_typesome .main_typesome {
+.footer .main {
 	padding: 6rem 0;
 	}	
 	
-.footer_typesome ul {
+.footer ul {
 	display: table;
 	border-spacing: 20px 0;
 	border-collapse: separate;
@@ -583,7 +583,7 @@ margin on the iframe, cause it breaks stuff. */
 	padding: 0;
 	}
 	
-.footer_typesome ul li {
+.footer ul li {
 	padding: 0;
 	display: table-cell;
 	vertical-align: middle;
@@ -597,11 +597,11 @@ margin on the iframe, cause it breaks stuff. */
 	box-shadow:         0px 0px 4px 0px rgba(0,0,0,0.20);
 	}
 	
-.footer_typesome ul:last-child {
+.footer ul:last-child {
 	border-spacing: 0;
 	}
 	
-.footer_typesome ul li a {
+.footer ul li a {
 	line-height: 2.2em;
 	color: #bbb;
 	text-decoration: none;
@@ -610,7 +610,7 @@ margin on the iframe, cause it breaks stuff. */
 	height: 32px;
 	}
 	
-.footer_typesome ul li:hover {
+.footer ul li:hover {
      -webkit-box-shadow: 0 1px 4px rgba(0,0,0,1);
    -moz-box-shadow: 0 1px 4px rgba(0,0,0,1);
         box-shadow: 0 1px 4px rgba(0,0,0,1);
@@ -619,7 +619,7 @@ margin on the iframe, cause it breaks stuff. */
      -o-transition:box-shadow 0.25s;
         transition:box-shadow 0.25s;
 		}
-.footer_typesome ul li a:hover {
+.footer ul li a:hover {
 	color: #fff;
 	}
 		
@@ -662,17 +662,17 @@ margin on the iframe, cause it breaks stuff. */
 
 /* On hover, show the tooltip! */
 
-.footer_typesome ul li:hover .tooltip {
+.footer ul li:hover .tooltip {
     display: inline-table;
     opacity: 1;
     top: -33px;
 	}
 
-.footer_typesome ul li:hover .tooltip:after {
+.footer ul li:hover .tooltip:after {
     opacity: 1;
     }
 	 
-.footer_typesome hr {
+.footer hr {
 	background: #383838;
 	height: 1px;
 	border-top: 1px #202020 solid;	
@@ -680,7 +680,7 @@ margin on the iframe, cause it breaks stuff. */
 	margin: 2.4rem auto;
 	}
 
-.footer_typesome .main_typesome p {
+.footer .main p {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -691,14 +691,14 @@ margin on the iframe, cause it breaks stuff. */
 	margin: 0;
 	}
 
-.footer_typesome .main_typesome p a {
+.footer .main p a {
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	color: #bbb;
 	}
 	
-.footer_typesome .main_typesome p a:hover {
+.footer .main p a:hover {
 	color: #fff;
 	}
 
@@ -719,25 +719,25 @@ margin on the iframe, cause it breaks stuff. */
 	display: none;  
 }
 
-.post-2 .header_typesome .logo_typesome img {
+.post-2 .header .logo img {
     box-shadow: none;
 }
 
-.post-2 .header_typesome .blogtitle_typesome, .post-2 .blogtitle_typesome a {
+.post-2 .header .blogtitle, .post-2 .blogtitle a {
     color: #383838;
     text-shadow: none;
 }
 
-.post-2 .header_typesome .blogtitle_typesome a:hover {
+.post-2 .header .blogtitle a:hover {
     color: #5BA4E5;
 }
 
-.post-2 .header_typesome .blogtitle_typesome {
+.post-2 .header .blogtitle {
     margin: 3.5rem 0;
 
 }
 
-.main_typesome .pause {
+.main .pause {
     width: 100%;
     max-width: 780px;
     border: none;
@@ -749,17 +749,17 @@ margin on the iframe, cause it breaks stuff. */
     display: none !important;
 }
 
-.back_typesome {
+.back {
 	text-decoration: none;
 	overflow: hidden;
 	position: relative;
 	}
 
-.back_typesome p {
+.back p {
 	margin: 0 0 1rem;
 	}
 
-.back_typesome a {
+.back a {
 	color: #7F7F7F;
 	font-size: 1.4rem;
 	text-decoration: none;
@@ -767,7 +767,7 @@ margin on the iframe, cause it breaks stuff. */
 	border-bottom: 1px #7F7F7F dotted;
 	}
 
-.back_typesome a:hover {
+.back a:hover {
 	color: #383838;
 	}
 
@@ -779,14 +779,14 @@ margin on the iframe, cause it breaks stuff. */
 	float: right;
 	}
 	
-.back_typesome span {
+.back span {
 	margin-left: 0.5rem;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	}
 	
 /* Article Footer */	
-.postfooter_typesome {
+.postfooter {
 	width: 100%;
     max-width: 780px;
     margin: 1rem auto;
@@ -803,7 +803,7 @@ margin on the iframe, cause it breaks stuff. */
 	}
 	
 /* Author Image */
-.authorimage_typesome {
+.authorimage {
     background-repeat: no-repeat;
     background-size: cover;
 	border: 4px solid #f4f4f4;
@@ -814,7 +814,7 @@ margin on the iframe, cause it breaks stuff. */
 	margin: 0.4rem 2.5rem 0 0;	
 	}
 
-.author_typesome {
+.author {
 	flex: 3;
 	width: 60%;
 	font-family: 'Open Sans', sans-serif;
@@ -825,35 +825,35 @@ margin on the iframe, cause it breaks stuff. */
 	border-right: 1px #f6f6f6 solid;
 	}
 	
-.author_typesome ul {
+.author ul {
 	margin: 0;
 	padding: 1.2rem 0 0;
 	}
 	
-.author_typesome ul li {
+.author ul li {
 	 display: inline-block;
 	 margin: 0;
 	 padding: 0.5rem 0;
 	}
 	
 /* Author Name*/
-.author_typesome ul li h4 {
+.author ul li h4 {
 	font-size: 1.4rem;
 	margin: 0;
 	padding: 0
 	}	
 
-.author_typesome ul li h4 a {
+.author ul li h4 a {
     text-decoration: none;
 }
 	
 /* Author Address, Website */
-.author_typesome ul li h5 {
+.author ul li h5 {
 	margin: 0;
 	padding: 0;
 	}
 
-.authordata_typesome {
+.authordata {
 	font-size: 1.4rem;
 	color: #7F7F7F;
 	font-family: 'Noto Serif', serif;
@@ -861,22 +861,22 @@ margin on the iframe, cause it breaks stuff. */
 	font-style: italic;
 	}
 		
-.authordata_typesome a {
+.authordata a {
 	color: #7F7F7F;
 	}
 	
-.authordata_typesome a:hover {
+.authordata a:hover {
 	color: #5BA4E5;
 	}
 		
-.authordata_typesome:before {
+.authordata:before {
 	content: " • ";
 	font-weight: 300;
 	color: #7F7F7F;
 	}	
 	
 /* Author Bio */
-.authorbio_typesome {
+.authorbio {
 	font-family: 'Noto Serif', serif;
 	font-weight: 400; 
 	font-size: 1.4rem;
@@ -890,14 +890,14 @@ margin on the iframe, cause it breaks stuff. */
    					9. Third Party Elements -> post.hbs
    ========================================================================== */	
 
-.postfooter_typesome .sharepost_typesome  {
+.postfooter .sharepost  {
 	width: 20%;
 	margin: 1.7rem auto;
 	padding: 0; 
 	text-align: center;
 	}
 
-.postfooter_typesome .sharepost_typesome h4 {
+.postfooter .sharepost h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 1.4rem;
@@ -907,7 +907,7 @@ margin on the iframe, cause it breaks stuff. */
 	text-align: center;
 	}
 	
-.postfooter_typesome .sharepost_typesome a {
+.postfooter .sharepost a {
 	font-size: 2.2rem;
 	color: #ddd;
 	text-decoration: none;
@@ -916,12 +916,12 @@ margin on the iframe, cause it breaks stuff. */
 	text-align: center;
 	}
 
-.postfooter_typesome .sharepost_typesome a:last-child {
+.postfooter .sharepost a:last-child {
 	margin: 0; 
 	padding: 0;
 	}
 
-.postfooter_typesome .sharepost_typesome a:hover {
+.postfooter .sharepost a:hover {
 	color: #383838;
 	}
 	
@@ -929,7 +929,7 @@ margin on the iframe, cause it breaks stuff. */
    					10. COMMENTS - Disqus
    ========================================================================== */
 
-.cmd_typesome {
+.cmd {
 	height: 6rem;
 	max-width: 780px;
 	width: 100%;
@@ -947,7 +947,7 @@ margin on the iframe, cause it breaks stuff. */
 	transition: background-color ease-in 0.3s, border-color ease-out 0.4s, color ease-out 0.4s;
 	}		
 	
-.cmd_typesome:hover {
+.cmd:hover {
 	border-color: #7F7F7F;
 	color: #fff;
 	background: #7F7F7F;
@@ -959,7 +959,7 @@ margin on the iframe, cause it breaks stuff. */
 
     /* Logo */
 
- .site-head .authorimage_typesome {
+ .site-head .authorimage {
 	display: block;
 	height: 90px;
     width: 90px;
@@ -979,7 +979,7 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 }
 
-.site-head .authordata_typesome:before {
+.site-head .authordata:before {
     display: none;
 }
 
@@ -996,7 +996,7 @@ margin on the iframe, cause it breaks stuff. */
     color: #fff;
 }
 
-.back_typesome .go-home {
+.back .go-home {
     margin-bottom: 5rem;
 }
 
@@ -1015,22 +1015,22 @@ margin on the iframe, cause it breaks stuff. */
        	min-height: 280px;
 		}
 		
-	.blogtitle_typesome a, #site-head .header_typesome .blogtitle_typesome a {
+	.blogtitle a, #site-head .header .blogtitle a {
         font-size: 4rem;
         letter-spacing: -1px;
         line-height: 1.1;
     }
 
-    .blogdescription_typesome {
+    .blogdescription {
         font-size: 1.7rem;
         line-height: 1.5em;
     }
 	
-	.posttitle_typesome {
+	.posttitle {
 		font-size: 3.5rem;
 	}
 		
-	.postcontent_typesome {
+	.postcontent {
 		font-size: 1.8rem;
 	}
 
@@ -1051,23 +1051,23 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 2.4rem;
     }
 	
-	.share_typesome a {
+	.share a {
 		padding-left: 1rem;
 		}
 	
-	.author_typesome {
+	.author {
 		max-width: 50%;
 		}
 		
-    .postfooter_typesome .sharepost_typesome {
+    .postfooter .sharepost {
 		width: 20%;
 		   }
 		   
-	.postfooter_typesome .sharepost_typesome h4 {
+	.postfooter .sharepost h4 {
 		margin: 0 auto 10%;
 		}
 		   
-	.postfooter_typesome .sharepost_typesome a {
+	.postfooter .sharepost a {
 		padding: 0 5% 0 0;
 		margin: 0.5rem 0 0;
 		}
@@ -1085,26 +1085,26 @@ margin on the iframe, cause it breaks stuff. */
 			width: 100%;
 		}
 		
-		.main_typesome {
+		.main {
 			width: 94%;
 			}
 	   
-	   .blogtitle_typesome a, #site-head .header_typesome .blogtitle_typesome a {
+	   .blogtitle a, #site-head .header .blogtitle a {
            font-size: 3rem;
            letter-spacing: -1px;
            margin: 2rem auto;
     	}
 
-    	.blogdescription_typesome {
+    	.blogdescription {
 			font-size: 1.5rem;
 			line-height: 1.5em;
 			width: 90%;
     	}
-		.posttitle_typesome {
+		.posttitle {
 			font-size: 3.5rem;
 		}
 		
-		.postcontent_typesome {
+		.postcontent {
 			font-size: 1.8rem;
 		}
 
@@ -1122,53 +1122,53 @@ margin on the iframe, cause it breaks stuff. */
 			font-size: 2.3rem;
 		}
 		
-		.posttitle_typesome {
+		.posttitle {
 			font-size: 2.8rem;
 		}
 			
-		.postcontent_typesome {
+		.postcontent {
 			font-size: 1.6rem;
 		}
 		
-		.postheader_typesome ul {
+		.postheader ul {
 			line-height: 1.8;
 			}
        
-       .author-thumb_typesome {
+       .author-thumb {
             vertical-align: middle;
            margin-bottom: 0.2rem;
         }
        
-        .postheader_typesome ul .date_typesome, .postheader_typesome ul .posttags_typesome {
+        .postheader ul .date, .postheader ul .posttags {
             display: block;
         }
 		
-		.date_typesome, .readtime_typesome, .posttags_typesome a, .name-thumb_typesome a  {
+		.date, .readtime, .posttags a, .name-thumb a  {
 			font-size: 1.2rem;
 			line-height: 1.2;
 			padding: 0;
 			margin: 0;
 			}
 		
-		.excerptfooter_typesome {
+		.excerptfooter {
 			height: 10rem;
 			margin: 0 auto;
 			text-align: center;
 			border-top: 1px solid #ddd;
 			}
 		
-		.share_typesome {
+		.share {
 			display: inline-block;
 			width: 100%;
 			top: 4rem;
 			text-align: center;
 			}	
 		
-		.share_typesome h4 {
+		.share h4 {
 			display: none;
 			}
 		
-		.share_typesome a {
+		.share a {
 			margin: 0;
 			padding: 2rem 1rem 0;
 			font-size: 2.5rem;
@@ -1187,20 +1187,20 @@ margin on the iframe, cause it breaks stuff. */
 		.page-number {
 			display: block;}
 		
-		.postfooter_typesome {
+		.postfooter {
 			display: block;
 			}
          
-       .postfooter_typesome .sharepost_typesome a:last-child {
+       .postfooter .sharepost a:last-child {
             margin: 0 0.8rem; 
             padding: 0;
             }
 			
-		.authorimage_typesome {
+		.authorimage {
 			display: none;
 			}
 		
-		.author_typesome {
+		.author {
 			display: block;
 			border-right: none;
 			margin: 0 auto;
@@ -1209,31 +1209,31 @@ margin on the iframe, cause it breaks stuff. */
 			text-align: center;
 			}
 		
-		.authorbio_typesome {
+		.authorbio {
 			padding: 1rem 0 0;
 			margin: 0 auto;
 			text-align: center;
 			}
 		
-		.postfooter_typesome .sharepost_typesome {
+		.postfooter .sharepost {
 			display: block;
 			margin: 3rem auto;
 			width: 100%;
 			text-align: center;
 			padding: 0;
 			}
-		.postfooter_typesome .sharepost_typesome h4 {
+		.postfooter .sharepost h4 {
 			padding: 0;
 			margin: 0 0 1.5rem 0;
 			}	
 		
-		.postfooter_typesome .sharepost_typesome a {
+		.postfooter .sharepost a {
 			padding: 0;
 			margin: 0 0.8rem;
 			font-size: 2.5rem;
 			}
 		
-		.article_typesome {
+		.article {
 			margin-bottom: 4rem;
 			}
 		}
