@@ -1,5 +1,9 @@
 {
-  "name": "NN Frontend",
+  "name": "NNFrontend",
   "version": "0.0.1",
-  "homepage": "http://nnfrontend.ru/"
+  "homepage": "http://nnfrontend.ru/",
+  "devDependencies": {
+      "csscomb": "3.*",
+      "autoprefixer": "1.0.*"
+  }
 }
