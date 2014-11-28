@@ -1,5 +1,5 @@
 /* ==========================================================================
-   								Table of Contents
+                                Table of Contents
 ========================================================================== */
 
 /*
@@ -22,49 +22,36 @@
  */
  
  /* ==========================================================================
-   					            0. Includes 
+                                0. Includes 
    ========================================================================== */
 
-@import url(normalize.css);
+/*@import url(normalize.css);*/
 
  /* ==========================================================================
-   					1. Basics - Setting up some base styles
+                    1. Basics - Setting up some base styles
    ========================================================================== */
 
-html {
-	height: 100%;
-    max-height: 100%;
-    font-size: 62.5%;
-	}
-
 body {
-	height: 100%;
-    max-height: 100%;
-    font-family: 'Noto Serif', serif;
-    font-size: 2.0rem;
-    line-height: 1.6em;
-    color: #383838;
-	background: #fff;
-	}
-	
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	text-rendering: optimizelegibility;
-	line-height: 1;
-	}	
-	
-::-moz-selection {
-    color: #222;
-    background: #D6EDFF;
-    text-shadow: none;
-	}
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
 
+    margin: 0;
+
+    color: #444;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+    line-height: 1;
+}
 ::selection {
     color: #222;
     background: #D6EDFF;
     text-shadow: none;
-	}
+}
 
 h1 { font-size: 4.8rem; }
 
@@ -81,31 +68,31 @@ h6 { font-size: 1.8rem; }
 a {
     color: #383838;
     transition: all ease 0.3s;
-	}
-	
+    }
+    
 a:visited { outline: none; }
 
 a:hover {
     color: #5BA4E5;
-	}	
-		
-a:active { outline: none; }	
-	
+    }   
+        
+a:active { outline: none; } 
+    
 a:focus { outline: none; }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
     color: #383838;
-	}
+    }
 
 p, ul, ol, dl {
     margin: 1.6em 0;
-	}
+    }
 
 ol ol, ul ul,
 ul ol, ol ul {
     margin: 0.4em 0;
-	}
+    }
 
 dl dt {
     float: left;
@@ -117,12 +104,12 @@ dl dt {
     white-space: nowrap;
     font-weight: bold;
     margin-bottom: 1em
-	}
+    }
 
 dl dd {
     margin-left: 200px;
     margin-bottom: 1em
-	}
+    }
 
 hr {
     display: block;
@@ -131,51 +118,51 @@ hr {
     border-top: 1px solid #efefef;
     margin: 3.2em 0;
     padding: 0;
-	}
+    }
 
 img {
     border: 0;
-}	
+}   
 
 .postcontent img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     padding: 0.6em 0;
-	} 
-	
+    } 
+    
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 1.6em 0 1.6em -2.2em;
     padding: 0 0 0 1.6em;
     border-left: #4a4a4a 0.4em solid;
-	}
+    }
 
 blockquote p {
     margin: 0.8em 0;
     font-style: italic;
-	}
+    }
 
 blockquote small {
     display: inline-block;
     margin: 0.8em 0 0.8em 1.5em;
     font-size:0.9em;
     color: #ccc;
-	}
+    }
 
 blockquote small:before { content: '\2014 \00A0'; }
 
 blockquote cite {
     font-weight:bold;
-	}
+    }
 
 blockquote cite a { font-weight: normal; }
 
 mark {
     background-color: #ffc336;
-	}
+    }
 
 code, tt {
     padding: 1px 3px;
@@ -185,7 +172,7 @@ code, tt {
     border: 1px solid #E3EDF3;
     background: #F7FAFB;
     border-radius: 2px;
-	}
+    }
 
 pre {
     -moz-box-sizing: border-box;
@@ -200,7 +187,7 @@ pre {
     overflow: auto;
     background: #F7FAFB;
     border-radius: 3px;
-	}
+    }
 
 pre code, tt {
     font-size: inherit;
@@ -209,7 +196,7 @@ pre code, tt {
     background: transparent;
     border: none;
     padding: 0;
-	}
+    }
 
 kbd {
     display: inline-block;
@@ -225,7 +212,7 @@ kbd {
     box-shadow: 
         0 1px 0 rgba(0, 0, 0, 0.2), 
         0 1px 0 0 #fff inset;
-	}
+    }
 
 table {
     -moz-box-sizing: border-box;
@@ -234,7 +221,7 @@ table {
     width:100%;
     max-width: 100%;
     background-color: transparent;
-	}
+    }
 
 table th,
 table td {
@@ -243,7 +230,7 @@ table td {
     text-align: left;
     vertical-align: top;
     border-top: 1px solid #efefef;
-	}
+    }
 
 table th { color: #000; }
 
@@ -254,7 +241,7 @@ table colgroup + thead tr:first-child td,
 table thead:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
     border-top: 0;
-	}
+    }
 
 table tbody + tbody { border-top: 2px solid #efefef; }
 
@@ -263,135 +250,135 @@ table table table { background-color: #fff; }
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
     background-color: #f6f6f6;
-	}
+    }
 
 table.plain tbody > tr:nth-child(odd) > td,
 table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
-	}
+    }
 
 iframe, .fluid-width-video-wrapper {
     display: block;
     margin: 1.6em 0;
-	}
+    }
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe {
     margin: 0;
-	}
+    }
 
 
 /* ==========================================================================
-   								2. Utilities
+                                2. Utilities
    ========================================================================== */
 
 .hidden {
-	text-indent: -99999px;
+    text-indent: -99999px;
     visibility: hidden;
     display: none;
-	}
-		
+    }
+        
 .vertical {
     display: table-cell;
     vertical-align: middle;
-	}
+    }
 
 /* =========================================================================
-   					3. General - The main styles for the the theme 
+                    3. General - The main styles for the the theme 
    ========================================================================== */
   
 .site-head {height: 500px;}
 #site-head {height: 300px;}
 
 .site-head, #site-head {
-	position: relative;
-	display: table; 
-	width: 100%;
-	margin-bottom: 6rem;
-	text-align: center;
-	color: #fff;
-	background: #2B2B2B no-repeat center center;
-  	background-size: cover;
-	}
+    position: relative;
+    display: table; 
+    width: 100%;
+    margin-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background: #2B2B2B no-repeat center center;
+    background-size: cover;
+    }
 
 .site-head:before, #site-head:before {
-	content: "";
-	display: block; 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image: -o-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%) ;
-	background-image: -moz-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
-	background-image: -webkit-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
-	background-image: -ms-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
-	background-image: linear-gradient(-180deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);	
-	} 
+    content: "";
+    display: block; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -o-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%) ;
+    background-image: -moz-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
+    background-image: -webkit-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
+    background-image: -ms-linear-gradient(-90deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);
+    background-image: linear-gradient(-180deg, rgba(43,43,43,0.20) 0%, rgba(43,43,43,0.50) 100%);   
+    } 
 
 .header {
-	position: relative;
-	margin: 3rem auto;
-	width: 80%;
-	max-width: 700px;
+    position: relative;
+    margin: 3rem auto;
+    width: 80%;
+    max-width: 700px;
     display: block;
-	}
+    }
 
     /* Logo */
 
  .logo img {
-	display: block;
-	height: 90px;
+    display: block;
+    height: 90px;
     width: 90px;
-	margin: 0 auto;
-	border-radius: 100px;
-	border: 3px solid #fff;
-	-moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-	box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.5);
-	}	
-	
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 3px solid #fff;
+    -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.5);
+    }   
+    
 .blogtitle {
-	margin: 2rem 0 2rem;
-	}
+    margin: 2rem 0 2rem;
+    }
 
 .blogtitle a,  #site-head .header .blogtitle a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 4.8rem;
-	color: #fff; 
-	text-shadow: 2px 2px 0px #000;
-	text-decoration: none;
-	}
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #fff; 
+    text-shadow: 2px 2px 0px #000;
+    text-decoration: none;
+    }
  
 .blogdescription {
-	font-family: 'Noto Serif', serif;
-	font-size: 1.6rem;
-	color: #eee;
-	line-height: 1.4;
-	text-shadow: 1px 1px 2px #000;
-	width: 70%;
-	margin: 0 auto;
-	text-rendering: optimizelegibility;
-	}
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6rem;
+    color: #eee;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px #000;
+    width: 70%;
+    margin: 0 auto;
+    text-rendering: optimizelegibility;
+    }
 
 /* ==========================================================================
-   								4. Articles
+                                4. Articles
    ========================================================================== */
 
 .main {
-	width: 80%;
-	max-width: 780px;
-	margin: 0 auto;
-	}
-	 	
+    width: 80%;
+    max-width: 780px;
+    margin: 0 auto;
+    }
+        
 .article {
-	margin-bottom: 6rem;
-	}
-	
+    margin-bottom: 6rem;
+    }
+    
 .postheader ul {
-	margin: 0;
-	padding: 0;
-	}
+    margin: 0;
+    padding: 0;
+    }
 
 .author-thumb {
     width: 28px;
@@ -400,216 +387,216 @@ margin on the iframe, cause it breaks stuff. */
     vertical-align: bottom;
     margin-right: 0.5rem;
 }
-	
+    
 .postheader ul li {
-	padding: 0;
-	margin: 0;
-	display: inline-block;
-	}
-	
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    }
+    
 .date, .posttags, .posttags a, .name-thumb a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 1.4rem;
-	color: #7F7F7F;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #7F7F7F;
     text-decoration: none;
-	}
+    }
 
 .posttags a:hover, .name-thumb a:hover  {
     text-decoration: underline;
     color: #5BA4E5;
 }
-	
+    
 .posttags:before, .postheader ul li:nth-child(3):before {
-	content:" • ";
-	font-weight: 700;
+    content:" • ";
+    font-weight: 700;
     color: #7F7F7F;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
-	}
-	
-	/* Post title */
+    }
+    
+    /* Post title */
 
 .posttitle {
-	padding: 1rem 0 1.2rem;
-	margin: 0;
-	line-height: 1.2em;
-	}
+    padding: 1rem 0 1.2rem;
+    margin: 0;
+    line-height: 1.2em;
+    }
 
 .posttitle a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	color: #383838;
-	text-decoration: none;
-	}
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #383838;
+    text-decoration: none;
+    }
 
 .posttitle a:hover {
-	color: #5BA4E5;
-	}
+    color: #5BA4E5;
+    }
 
-	/* Post content */
-	
+    /* Post content */
+    
 .postcontent {
-	font-family: 'Noto Serif', serif;
-	font-size: 2rem;
-	color: #383838;
-	line-height: 1.6;
-	padding-bottom: 2rem;
-	}
-	
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    color: #383838;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+    }
+    
 .postcontent p:first-child {
-	margin: 0;
-	padding: 0;
-	}	
+    margin: 0;
+    padding: 0;
+    }   
 
 
 /* ==========================================================================
-   								5. Third Party Elements
+                                5. Third Party Elements
    ========================================================================== */
 
 .excerptfooter {
-	width: 100%;
-	border-bottom: 1px solid #ddd;
-	position: relative;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 1.6rem;
-	color: #383838; 
-	}
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #383838; 
+    }
 
 .read {
-	padding-top: 1rem;
-	padding-bottom: 1.4rem;
-	}
-	
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+    }
+    
 .read span:before {
-	content:" • ";
-	}
+    content:" • ";
+    }
 
 .share {
-	position: absolute;
-	right: 0;
-	top: 1rem;
-	overflow: hidden;	
-	}
-	
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    overflow: hidden;   
+    }
+    
 .share h4 {
-	font-size: 1.6rem;
-	color: #7F7F7F;
-	float: left;
-	padding-top: 1rem;
-	margin-top: 0;	
-	}
-	
+    font-size: 1.6rem;
+    color: #7F7F7F;
+    float: left;
+    padding-top: 1rem;
+    margin-top: 0;  
+    }
+    
 .share a {
-	font-size: 2rem;
-	color: #ddd;
-	text-decoration: none;
-	margin-left: 0.3rem;
-	padding-top: 0.8rem;
-	}
+    font-size: 2rem;
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 0.3rem;
+    padding-top: 0.8rem;
+    }
 
 .share a:hover {
-	color: #383838;
-	}
+    color: #383838;
+    }
 
  /* ==========================================================================
-   	        6. Pagination - Tools to let you flick between pages
+            6. Pagination - Tools to let you flick between pages
    ========================================================================== */
 
 .pagination {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 1.4rem;		
-	position: relative;
-	padding-bottom: 10rem;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 780px;
-	text-align: center;
-	}
-	
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;      
+    position: relative;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 780px;
+    text-align: center;
+    }
+    
 .pagination a { 
-	color: #7F7F7F;
-	text-decoration: none;
-	 }
+    color: #7F7F7F;
+    text-decoration: none;
+     }
 
 .newer-posts, .older-posts  {
-	display: inline-block;
-	border-radius: 4px;
-	border: 2px solid #ddd;
-	padding: 0.8rem 2.5rem;
-	position: absolute;	
-	max-width: 100%;
-	transition: border-color ease-out 0.4s, color ease-out 0.4s;
-	}
-		
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    padding: 0.8rem 2.5rem;
+    position: absolute; 
+    max-width: 100%;
+    transition: border-color ease-out 0.4s, color ease-out 0.4s;
+    }
+        
 .older-posts:hover,
 .newer-posts:hover {
     border-color: #7F7F7F;
-	}
+    }
 
 .older-posts { right: 0; }
 .newer-posts { left: 0; }
 
 .older-posts span { padding-left: 5px; }
-.newer-posts span {	padding-right: 5px; }
+.newer-posts span { padding-right: 5px; }
 
 .page-number {
-	color: #7F7F7F;
-	display: inline-block;
-	margin: 1.4rem auto;		
-	}
-	
+    color: #7F7F7F;
+    display: inline-block;
+    margin: 1.4rem auto;        
+    }
+    
  /* ==========================================================================
-   					7. Footer - The bottom of every page
+                    7. Footer - The bottom of every page
    ========================================================================== */
 
 .footer {
-	background: #2B2B2B;
-	width: 100%;
-	}
-	
+    background: #2B2B2B;
+    width: 100%;
+    }
+    
 .footer .main {
-	padding: 6rem 0;
-	}	
-	
+    padding: 6rem 0;
+    }   
+    
 .footer ul {
-	display: table;
-	border-spacing: 20px 0;
-	border-collapse: separate;
-	margin: 0 auto;
-	position: relative;
-	padding: 0;
-	}
-	
+    display: table;
+    border-spacing: 20px 0;
+    border-collapse: separate;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    }
+    
 .footer ul li {
-	padding: 0;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	width: 32px;
-	height: 32px;
-	border-radius: 100%;
-	background: #383838;
-	-moz-box-shadow:    0px 0px 4px 0px rgba(0,0,0,0.20);
-	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.20);
-	box-shadow:         0px 0px 4px 0px rgba(0,0,0,0.20);
-	}
-	
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #383838;
+    -moz-box-shadow:    0px 0px 4px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.20);
+    box-shadow:         0px 0px 4px 0px rgba(0,0,0,0.20);
+    }
+    
 .footer ul:last-child {
-	border-spacing: 0;
-	}
-	
+    border-spacing: 0;
+    }
+    
 .footer ul li a {
-	line-height: 2.2em;
-	color: #bbb;
-	text-decoration: none;
-	font-size: 1.6rem;
-	width: 32px;
-	height: 32px;
-	}
-	
+    line-height: 2.2em;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.6rem;
+    width: 32px;
+    height: 32px;
+    }
+    
 .footer ul li:hover {
      -webkit-box-shadow: 0 1px 4px rgba(0,0,0,1);
    -moz-box-shadow: 0 1px 4px rgba(0,0,0,1);
@@ -618,32 +605,32 @@ margin on the iframe, cause it breaks stuff. */
    -moz-transition:box-shadow 0.25s;
      -o-transition:box-shadow 0.25s;
         transition:box-shadow 0.25s;
-		}
+        }
 .footer ul li a:hover {
-	color: #fff;
-	}
-		
+    color: #fff;
+    }
+        
     /* Tooltip */
 
 .tooltip {
-	border-spacing: 0;
-	display: none;
+    border-spacing: 0;
+    display: none;
     padding: 4px 8px 5px 8px;
     position: absolute;
-	width: 5rem;
-	margin-left: -18px;
+    width: 5rem;
+    margin-left: -18px;
     top: -50px;
     color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;  
     font-size: 1rem;
     line-height: 1em;
     text-align: center;
     background: #202020;
     border-radius: 5px;
-	}
-	
-	/* The little chiclet arrow under the tooltip, pointing down */
+    }
+    
+    /* The little chiclet arrow under the tooltip, pointing down */
 
 .tooltip:after {
     content: "";
@@ -657,8 +644,8 @@ margin on the iframe, cause it breaks stuff. */
     margin-left:-5px;
     z-index: 220;
     width: 0;
-	opacity: 0;
-	}
+    opacity: 0;
+    }
 
 /* On hover, show the tooltip! */
 
@@ -666,57 +653,57 @@ margin on the iframe, cause it breaks stuff. */
     display: inline-table;
     opacity: 1;
     top: -33px;
-	}
+    }
 
 .footer ul li:hover .tooltip:after {
     opacity: 1;
     }
-	 
+     
 .footer hr {
-	background: #383838;
-	height: 1px;
-	border-top: 1px #202020 solid;	
-	width: 35%;
-	margin: 2.4rem auto;
-	}
+    background: #383838;
+    height: 1px;
+    border-top: 1px #202020 solid;  
+    width: 35%;
+    margin: 2.4rem auto;
+    }
 
 .footer .main p {
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 1.4rem;
-	color: #bbb;
-	line-height: 1.4em;
-	text-shadow: 0px 1px 0px #000;
-	margin: 0;
-	}
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #bbb;
+    line-height: 1.4em;
+    text-shadow: 0px 1px 0px #000;
+    margin: 0;
+    }
 
 .footer .main p a {
-	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	color: #bbb;
-	}
-	
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #bbb;
+    }
+    
 .footer .main p a:hover {
-	color: #fff;
-	}
+    color: #fff;
+    }
 
  /* ==========================================================================
-   					8. Single Post - When you click on an individual post
+                    8. Single Post - When you click on an individual post
    ========================================================================== */
-	
+    
     /* Article Header */
 
 .post-2 {
-	background: #fff;
+    background: #fff;
     margin-bottom: 5rem;
     height: 300px;
 }
 
 .post-2:before {
-	content: "";
-	display: none;  
+    content: "";
+    display: none;  
 }
 
 .post-2 .header .logo img {
@@ -750,227 +737,227 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .back {
-	text-decoration: none;
-	overflow: hidden;
-	position: relative;
-	}
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    }
 
 .back p {
-	margin: 0 0 1rem;
-	}
+    margin: 0 0 1rem;
+    }
 
 .back a {
-	color: #7F7F7F;
-	font-size: 1.4rem;
-	text-decoration: none;
-	padding-bottom: 2px;
-	border-bottom: 1px #7F7F7F dotted;
-	}
+    color: #7F7F7F;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px #7F7F7F dotted;
+    }
 
 .back a:hover {
-	color: #383838;
-	}
+    color: #383838;
+    }
 
 .go-back {
-	float: left;
-	}
-	
+    float: left;
+    }
+    
 .nav {
-	float: right;
-	}
-	
+    float: right;
+    }
+    
 .back span {
-	margin-left: 0.5rem;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	}
-	
-/* Article Footer */	
+    margin-left: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    }
+    
+/* Article Footer */    
 .postfooter {
-	width: 100%;
+    width: 100%;
     max-width: 780px;
     margin: 1rem auto;
-	max-width: 100%;
-	border-top: 2px #f6f6f6 solid;
-	display: -webkit-box;
+    max-width: 100%;
+    border-top: 2px #f6f6f6 solid;
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-	flex-direction: row;
+    flex-direction: row;
     justify-content: flex-start;
-	padding: 1.5rem 0 0;
-	}
-	
+    padding: 1.5rem 0 0;
+    }
+    
 /* Author Image */
 .authorimage {
     background-repeat: no-repeat;
     background-size: cover;
-	border: 4px solid #f4f4f4;
-	border-radius: 100%;
-	display: block;
+    border: 4px solid #f4f4f4;
+    border-radius: 100%;
+    display: block;
     height: 90px;
-	width: 90px;
-	margin: 0.4rem 2.5rem 0 0;	
-	}
+    width: 90px;
+    margin: 0.4rem 2.5rem 0 0;  
+    }
 
 .author {
-	flex: 3;
-	width: 60%;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	line-height: 0;
-	color: #383838;
-	font-size: 1.4rem;
-	border-right: 1px #f6f6f6 solid;
-	}
-	
+    flex: 3;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 0;
+    color: #383838;
+    font-size: 1.4rem;
+    border-right: 1px #f6f6f6 solid;
+    }
+    
 .author ul {
-	margin: 0;
-	padding: 1.2rem 0 0;
-	}
-	
+    margin: 0;
+    padding: 1.2rem 0 0;
+    }
+    
 .author ul li {
-	 display: inline-block;
-	 margin: 0;
-	 padding: 0.5rem 0;
-	}
-	
+     display: inline-block;
+     margin: 0;
+     padding: 0.5rem 0;
+    }
+    
 /* Author Name*/
 .author ul li h4 {
-	font-size: 1.4rem;
-	margin: 0;
-	padding: 0
-	}	
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0
+    }   
 
 .author ul li h4 a {
     text-decoration: none;
 }
-	
+    
 /* Author Address, Website */
 .author ul li h5 {
-	margin: 0;
-	padding: 0;
-	}
+    margin: 0;
+    padding: 0;
+    }
 
 .authordata {
-	font-size: 1.4rem;
-	color: #7F7F7F;
-	font-family: 'Noto Serif', serif;
-	font-weight: 400; 
-	font-style: italic;
-	}
-		
+    font-size: 1.4rem;
+    color: #7F7F7F;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400; 
+    font-style: italic;
+    }
+        
 .authordata a {
-	color: #7F7F7F;
-	}
-	
+    color: #7F7F7F;
+    }
+    
 .authordata a:hover {
-	color: #5BA4E5;
-	}
-		
+    color: #5BA4E5;
+    }
+        
 .authordata:before {
-	content: " • ";
-	font-weight: 300;
-	color: #7F7F7F;
-	}	
-	
+    content: " • ";
+    font-weight: 300;
+    color: #7F7F7F;
+    }   
+    
 /* Author Bio */
 .authorbio {
-	font-family: 'Noto Serif', serif;
-	font-weight: 400; 
-	font-size: 1.4rem;
-	margin: 0;
-	padding: 1.2rem 1rem 0 0;
-	line-height: 1.4;
-	color: #7F7F7F;
-	}
+    font-family: 'Noto Serif', serif;
+    font-weight: 400; 
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 1.2rem 1rem 0 0;
+    line-height: 1.4;
+    color: #7F7F7F;
+    }
 
  /* ==========================================================================
-   					9. Third Party Elements -> post.hbs
-   ========================================================================== */	
+                    9. Third Party Elements -> post.hbs
+   ========================================================================== */    
 
 .postfooter .sharepost  {
-	width: 20%;
-	margin: 1.7rem auto;
-	padding: 0; 
-	text-align: center;
-	}
+    width: 20%;
+    margin: 1.7rem auto;
+    padding: 0; 
+    text-align: center;
+    }
 
 .postfooter .sharepost h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 1.4rem;
-	color: #383838;
-	padding: 0;
-	margin: 0 auto;
-	text-align: center;
-	}
-	
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #383838;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
 .postfooter .sharepost a {
-	font-size: 2.2rem;
-	color: #ddd;
-	text-decoration: none;
-	margin: 1.5rem auto;
-	padding-right: 0.5rem;
-	text-align: center;
-	}
+    font-size: 2.2rem;
+    color: #ddd;
+    text-decoration: none;
+    margin: 1.5rem auto;
+    padding-right: 0.5rem;
+    text-align: center;
+    }
 
 .postfooter .sharepost a:last-child {
-	margin: 0; 
-	padding: 0;
-	}
+    margin: 0; 
+    padding: 0;
+    }
 
 .postfooter .sharepost a:hover {
-	color: #383838;
-	}
-	
+    color: #383838;
+    }
+    
  /* ==========================================================================
-   					10. COMMENTS - Disqus
+                    10. COMMENTS - Disqus
    ========================================================================== */
 
 .cmd {
-	height: 6rem;
-	max-width: 780px;
-	width: 100%;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	color: #7F7F7F;
-	font-size: 1.4rem;
-	border-radius: 4px;
-	border: 2px solid #ddd;	
-	transition: border ease 0.3s;
-	margin: 0 0 5rem;
-	padding: 0;
-	background: none;
-	transition: background-color ease-in 0.3s, border-color ease-out 0.4s, color ease-out 0.4s;
-	}		
-	
+    height: 6rem;
+    max-width: 780px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #7F7F7F;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    border: 2px solid #ddd; 
+    transition: border ease 0.3s;
+    margin: 0 0 5rem;
+    padding: 0;
+    background: none;
+    transition: background-color ease-in 0.3s, border-color ease-out 0.4s, color ease-out 0.4s;
+    }       
+    
 .cmd:hover {
-	border-color: #7F7F7F;
-	color: #fff;
-	background: #7F7F7F;
-	}
+    border-color: #7F7F7F;
+    color: #fff;
+    background: #7F7F7F;
+    }
 
  /* ==========================================================================
-   					            11. Author Page
+                                11. Author Page
    ========================================================================== */
 
     /* Logo */
 
  .site-head .authorimage {
-	display: block;
-	height: 90px;
+    display: block;
+    height: 90px;
     width: 90px;
-	margin: 0 auto;
-	border-radius: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
     background-size: cover;
-	border: 3px solid #fff;
-	-moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-	box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.5);
-	}
+    border: 3px solid #fff;
+    -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.5);
+    }
 
 .site-head h5, .site-head h5 a {
     display: inline-block;
@@ -1000,22 +987,22 @@ margin on the iframe, cause it breaks stuff. */
     margin-bottom: 5rem;
 }
 
-	
+    
 /* ==========================================================================
-  							12. Media Queries - Tablet
+                            12. Media Queries - Tablet
    ========================================================================== */
    
   @media only screen and (max-width: 900px) {
-	   
-	 blockquote {
+       
+     blockquote {
         margin-left: 0;
-    	}
-		
-	.site-head {
-       	min-height: 280px;
-		}
-		
-	.blogtitle a, #site-head .header .blogtitle a {
+        }
+        
+    .site-head {
+        min-height: 280px;
+        }
+        
+    .blogtitle a, #site-head .header .blogtitle a {
         font-size: 4rem;
         letter-spacing: -1px;
         line-height: 1.1;
@@ -1025,14 +1012,14 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.7rem;
         line-height: 1.5em;
     }
-	
-	.posttitle {
-		font-size: 3.5rem;
-	}
-		
-	.postcontent {
-		font-size: 1.8rem;
-	}
+    
+    .posttitle {
+        font-size: 3.5rem;
+    }
+        
+    .postcontent {
+        font-size: 1.8rem;
+    }
 
     h1 {
         font-size: 3.5rem;
@@ -1050,89 +1037,89 @@ margin on the iframe, cause it breaks stuff. */
     h4 {
         font-size: 2.4rem;
     }
-	
-	.share a {
-		padding-left: 1rem;
-		}
-	
-	.author {
-		max-width: 50%;
-		}
-		
+    
+    .share a {
+        padding-left: 1rem;
+        }
+    
+    .author {
+        max-width: 50%;
+        }
+        
     .postfooter .sharepost {
-		width: 20%;
-		   }
-		   
-	.postfooter .sharepost h4 {
-		margin: 0 auto 10%;
-		}
-		   
-	.postfooter .sharepost a {
-		padding: 0 5% 0 0;
-		margin: 0.5rem 0 0;
-		}
+        width: 20%;
+           }
+           
+    .postfooter .sharepost h4 {
+        margin: 0 auto 10%;
+        }
+           
+    .postfooter .sharepost a {
+        padding: 0 5% 0 0;
+        margin: 0.5rem 0 0;
+        }
   }
-	
+    
 /* ==========================================================================
-   					13. Media Queries - Phone
+                    13. Media Queries - Phone
    ========================================================================== */
  
    @media all and (max-width: 600px) {
-	   
-	   .site-head, #site-head {
-			max-height: 100%;
-			margin-bottom: 3rem;
-			width: 100%;
-		}
-		
-		.main {
-			width: 94%;
-			}
-	   
-	   .blogtitle a, #site-head .header .blogtitle a {
+       
+       .site-head, #site-head {
+            max-height: 100%;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+        
+        .main {
+            width: 94%;
+            }
+       
+       .blogtitle a, #site-head .header .blogtitle a {
            font-size: 3rem;
            letter-spacing: -1px;
            margin: 2rem auto;
-    	}
+        }
 
-    	.blogdescription {
-			font-size: 1.5rem;
-			line-height: 1.5em;
-			width: 90%;
-    	}
-		.posttitle {
-			font-size: 3.5rem;
-		}
-		
-		.postcontent {
-			font-size: 1.8rem;
-		}
+        .blogdescription {
+            font-size: 1.5rem;
+            line-height: 1.5em;
+            width: 90%;
+        }
+        .posttitle {
+            font-size: 3.5rem;
+        }
+        
+        .postcontent {
+            font-size: 1.8rem;
+        }
 
-		h1, h2 {
-			font-size: 3rem;
-			letter-spacing: -1px;
-			line-height: 1.1em;
-		}
+        h1, h2 {
+            font-size: 3rem;
+            letter-spacing: -1px;
+            line-height: 1.1em;
+        }
 
-		h3 {
-			font-size: 2.8rem;
-		}
-	
-		h4 {
-			font-size: 2.3rem;
-		}
-		
-		.posttitle {
-			font-size: 2.8rem;
-		}
-			
-		.postcontent {
-			font-size: 1.6rem;
-		}
-		
-		.postheader ul {
-			line-height: 1.8;
-			}
+        h3 {
+            font-size: 2.8rem;
+        }
+    
+        h4 {
+            font-size: 2.3rem;
+        }
+        
+        .posttitle {
+            font-size: 2.8rem;
+        }
+            
+        .postcontent {
+            font-size: 1.6rem;
+        }
+        
+        .postheader ul {
+            line-height: 1.8;
+            }
        
        .author-thumb {
             vertical-align: middle;
@@ -1142,98 +1129,98 @@ margin on the iframe, cause it breaks stuff. */
         .postheader ul .date, .postheader ul .posttags {
             display: block;
         }
-		
-		.date, .readtime, .posttags a, .name-thumb a  {
-			font-size: 1.2rem;
-			line-height: 1.2;
-			padding: 0;
-			margin: 0;
-			}
-		
-		.excerptfooter {
-			height: 10rem;
-			margin: 0 auto;
-			text-align: center;
-			border-top: 1px solid #ddd;
-			}
-		
-		.share {
-			display: inline-block;
-			width: 100%;
-			top: 4rem;
-			text-align: center;
-			}	
-		
-		.share h4 {
-			display: none;
-			}
-		
-		.share a {
-			margin: 0;
-			padding: 2rem 1rem 0;
-			font-size: 2.5rem;
-			}
-		
-		.pagination {
-			padding: 2rem 0 5rem;
-			width: 100%;
-			text-align: center;	
-			}
-		
-		.newer-posts, .older-posts {
-			position: static;
-			}
-			
-		.page-number {
-			display: block;}
-		
-		.postfooter {
-			display: block;
-			}
+        
+        .date, .readtime, .posttags a, .name-thumb a  {
+            font-size: 1.2rem;
+            line-height: 1.2;
+            padding: 0;
+            margin: 0;
+            }
+        
+        .excerptfooter {
+            height: 10rem;
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            }
+        
+        .share {
+            display: inline-block;
+            width: 100%;
+            top: 4rem;
+            text-align: center;
+            }   
+        
+        .share h4 {
+            display: none;
+            }
+        
+        .share a {
+            margin: 0;
+            padding: 2rem 1rem 0;
+            font-size: 2.5rem;
+            }
+        
+        .pagination {
+            padding: 2rem 0 5rem;
+            width: 100%;
+            text-align: center; 
+            }
+        
+        .newer-posts, .older-posts {
+            position: static;
+            }
+            
+        .page-number {
+            display: block;}
+        
+        .postfooter {
+            display: block;
+            }
          
        .postfooter .sharepost a:last-child {
             margin: 0 0.8rem; 
             padding: 0;
             }
-			
-		.authorimage {
-			display: none;
-			}
-		
-		.author {
-			display: block;
-			border-right: none;
-			margin: 0 auto;
-			width: 100%;
-			max-width: 600px;
-			text-align: center;
-			}
-		
-		.authorbio {
-			padding: 1rem 0 0;
-			margin: 0 auto;
-			text-align: center;
-			}
-		
-		.postfooter .sharepost {
-			display: block;
-			margin: 3rem auto;
-			width: 100%;
-			text-align: center;
-			padding: 0;
-			}
-		.postfooter .sharepost h4 {
-			padding: 0;
-			margin: 0 0 1.5rem 0;
-			}	
-		
-		.postfooter .sharepost a {
-			padding: 0;
-			margin: 0 0.8rem;
-			font-size: 2.5rem;
-			}
-		
-		.article {
-			margin-bottom: 4rem;
-			}
-		}
+            
+        .authorimage {
+            display: none;
+            }
+        
+        .author {
+            display: block;
+            border-right: none;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            }
+        
+        .authorbio {
+            padding: 1rem 0 0;
+            margin: 0 auto;
+            text-align: center;
+            }
+        
+        .postfooter .sharepost {
+            display: block;
+            margin: 3rem auto;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            }
+        .postfooter .sharepost h4 {
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+            }   
+        
+        .postfooter .sharepost a {
+            padding: 0;
+            margin: 0 0.8rem;
+            font-size: 2.5rem;
+            }
+        
+        .article {
+            margin-bottom: 4rem;
+            }
+        }
